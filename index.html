@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreya | Developer Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b13;
+      color: #f5f3ff;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1050px, 90%); margin: auto; }
+    header {
+      padding: 22px 0;
+      border-bottom: 1px solid #29253b;
+    }
+    nav { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .logo { font-size: 22px; font-weight: bold; color: #b794ff; }
+    .links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .links a:hover { color: #b794ff; }
+    .hero { padding: 85px 0 70px; }
+    .tag {
+      color: #c4a8ff; background: #211736;
+      display: inline-block; padding: 6px 13px;
+      border-radius: 20px; font-size: 14px;
+    }
+    h1 { font-size: clamp(38px, 7vw, 68px); line-height: 1.15; margin: 20px 0; }
+    .purple { color: #b794ff; }
+    .intro { color: #c4bfd5; max-width: 650px; font-size: 18px; }
+    .buttons { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+    .btn {
+      display: inline-block; padding: 11px 19px;
+      border: 1px solid #9d75f5; border-radius: 9px;
+      background: #9d75f5; color: #100b1d; font-weight: bold;
+    }
+    .btn.secondary { background: transparent; color: #e9ddff; }
+    section { padding: 48px 0; }
+    h2 { font-size: 30px; margin-bottom: 22px; }
+    .muted { color: #b5aec8; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+    .card {
+      background: #14131f; border: 1px solid #302942;
+      border-radius: 15px; padding: 22px;
+    }
+    .card h3 { color: #d4bfff; margin-bottom: 10px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip {
+      padding: 7px 13px; border: 1px solid #403253;
+      background: #191526; border-radius: 20px; color: #e1d3ff;
+    }
+    .line { border-top: 1px solid #29253b; }
+    footer { padding: 28px 0; color: #aaa2bd; text-align: center; }
+    @media (max-width: 600px) {
+      .hero { padding-top: 55px; }
+      .links { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">Shreya.dev</a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container hero" id="home">
+      <span class="tag">Computer Science Engineering Student</span>
+      <h1>Hello, I'm Shreya.<br>
+        <span class="purple">Aspiring Software Developer.</span>
+      </h1>
+      <p class="intro">
+        I am a CSE student who enjoys learning programming,
+        solving problems, and building useful projects.
+        I am currently strengthening my development and
+        problem-solving skills, one step at a time.
+      </p>
+      <div class="buttons">
+        <a class="btn" href="#projects">Explore My Projects ↗</a>
+        <a class="btn secondary" href="#contact">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="line"></div>
+    <section id="about">
+      <div class="container">
+        <h2>About <span class="purple">Me</span></h2>
+        <div class="card">
+          <p class="muted">
+            I am pursuing a Bachelor of Engineering in Computer
+            Science and Engineering. I am interested in software
+            development, data science, and learning new technologies.
+            My goal is to turn what I learn into practical projects
+            and grow as a developer.
+          </p>
+          <p style="margin-top:14px">🎓 B.E. in Computer Science and Engineering</p>
+          <p>📍 SMVITM, Bantakal, Karnataka</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>My <span class="purple">Skills</span></h2>
+        <div class="chips">
+          <span class="chip">C Programming</span>
+          <span class="chip">Python</span>
+          <span class="chip">Java</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">Data Structures</span>
+          <span class="chip">GitHub — Learning</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Featured <span class="purple">Projects</span></h2>
+        <div class="grid">
+          <article class="card">
+            <h3>01. Telecom Billing System</h3>
+            <p class="muted">
+              A C programming project designed to manage customer
+              details and calculate telephone bills.
+            </p>
+            <p class="purple" style="margin-top:14px">C Programming</p>
+          </article>
+          <article class="card">
+            <h3>02. Online Examination Result System</h3>
+            <p class="muted">
+              A data structures project using a Binary Search Tree
+              to store examination results and search student records.
+            </p>
+            <p class="purple" style="margin-top:14px">C / Data Structures</p>
+          </article>
+          <article class="card">
+            <h3>03. Biomechanical Data Classification</h3>
+            <p class="muted">
+              An ongoing machine learning mini-project exploring
+              biomechanical measurements to classify normal and
+              abnormal movement patterns.
+            </p>
+            <p class="purple" style="margin-top:14px">Python / Machine Learning</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Let's <span class="purple">Connect</span></h2>
+        <div class="card">
+          <p class="muted">
+            I am always ready to learn, collaborate, and explore
+            opportunities to grow as a developer.
+          </p>
+          <div class="buttons">
+            <!-- Replace the example links with your real profile URLs -->
+            <a class="btn" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+            <a class="btn secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+          <p class="muted" style="margin-top:15px;font-size:14px">
+            Add your actual profile links before sharing your portfolio.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Designed and built by Shreya 💜</p>
+      <p>© 2026 Shreya | Keep learning. Keep building.</p>
+    </div>
+  </footer>
+</body>
+</html>
